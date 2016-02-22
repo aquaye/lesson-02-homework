@@ -21,7 +21,7 @@ end
 def fizz_buzz_to(limit)
   # for each value of "num" between 1 and the value of "limit"
   1.upto(limit).each do |num|
-    # put the value of method "fizzbuzz" using the value "num"
+    # put the value of method "fizzbuzz" for each value "num"
     puts fizzbuzz(num)
   end
 end
@@ -39,7 +39,7 @@ puts area_of_triangle(base, height)
 
 # Coding
 
-class Reservation
+class WaitList
   # add your code here
 
   def initialize
@@ -60,17 +60,18 @@ class Reservation
   end
 end
 
-restaurant = Reservation.new
+restaurant = WaitList.new
 
-puts restaurant
+puts restaurant.inspect
 
 restaurant.add_party("Carroll")
 restaurant.add_party("Quaye")
 restaurant.add_party("Deez")
-puts restaurant.list
+puts restaurant.inspect
 restaurant.seat
-puts restaurant.list
+puts restaurant.inspect
 restaurant.seat
-puts restaurant.list
+puts restaurant.inspect
 restaurant.seat
-puts restaurant.list
+puts restaurant.inspect
+
