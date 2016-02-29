@@ -41,6 +41,7 @@ puts area_of_triangle(base, height)
 
 class WaitList
   # add your code here
+  attr_reader :list
 
   def initialize
     @list = []
@@ -51,12 +52,9 @@ class WaitList
     return "added #{party_name}"
   end
 
-  def list
-    @list
-  end
-
   def seat
     @list.shift
+    return @list
   end
 end
 
